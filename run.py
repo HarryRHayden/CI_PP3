@@ -11,4 +11,8 @@ user_guesses = []
 # How many guesses the user gets
 GUESS_COUNT = 7
 
-def 
+
+def choose_list(gender_guess):
+    """
+    Loop until player has chosen a list to guess from
+    """
