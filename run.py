@@ -6,5 +6,5 @@ girl_names = ['Georgina', 'Elizabeth', 'Lucy', 'Louise', 'Ellie']
 
 # Empty list for users guesses
 user_guesses = []
-user_guess_list = []
-
+# How many guesses the user gets
+GUESS_COUNT = 7
