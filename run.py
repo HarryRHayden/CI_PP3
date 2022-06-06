@@ -32,6 +32,11 @@ def choose_list(gender_guess):
 
 
 def which_word(boys_name, girls_name, choose_gender):
+    """
+    Determins the word to be guessed
+    """
+    
+
 
 boys_name, girls_name, choose_gender = choose_list(gender_guess)
 print(boys_name)
