@@ -17,9 +17,13 @@ def choose_list(gender):
     Loop until player has chosen a list to guess from
     """
     choose_gender = input(
-        "Would you like to guess a boy's or girl's name?"
+        "Would you like to guess a boy's name (B) or girl's name (G)?"
     )
-    print(choose_gender)
+    
+    boys_name = random.choice(gender_guess['boys_names'])
+    girls_name = random.choice(gender_guess['girl_names'])
+    print(boys_name)
+    print(girls_name)
 
 
 choose_list(gender_guess)
