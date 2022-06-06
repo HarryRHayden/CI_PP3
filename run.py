@@ -2,8 +2,8 @@ import time, random
 
 # Lists for potential words to guess
 gender_guess = {
-    'boys_names' : ['Luke', 'Harry', 'Edward', 'William', 'Lewis', 'Gregory'],
-    'girl_names' : ['Georgina', 'Elizabeth', 'Lucy', 'Louise', 'Ellie']
+    'boys_names': ['Luke', 'Harry', 'Edward', 'William', 'Lewis', 'Gregory'],
+    'girl_names': ['Georgina', 'Elizabeth', 'Lucy', 'Louise', 'Ellie']
 }
 
 # Empty list for users guesses
@@ -26,7 +26,7 @@ def choose_list(gender_guess):
         choose_gender == 'G' or choose_gender == 'B'
     ):
         choose_gender = input(
-        "Would you like to guess a boy's name (B) or girl's name (G)?"
+            "Would you like to guess a boy's name (B) or girl's name (G)?"
     )
     return [boys_name, girls_name, choose_gender]
 
