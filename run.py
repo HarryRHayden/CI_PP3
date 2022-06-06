@@ -30,5 +30,7 @@ def choose_list(gender_guess):
     )
     return [boys_name, girls_name, choose_gender]
 
-word_to_guess = choose_list(gender_guess)
-print(word_to_guess)
+boys_name, girls_name, choose_gender = choose_list(gender_guess)
+print(boys_name)
+print(girls_name)
+print(choose_gender)
