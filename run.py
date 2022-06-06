@@ -12,18 +12,23 @@ user_guesses = []
 GUESS_COUNT = 7
 
 
-def choose_list(gender):
+def choose_list(gender_guess):
     """
     Loop until player has chosen a list to guess from
     """
     choose_gender = input(
-        "Would you like to guess a boy's name (B) or girl's name (G)?"
+        "Would you like to guess a boy's name (B) or girl's name (G)?\n"
     )
     
     boys_name = random.choice(gender_guess['boys_names'])
     girls_name = random.choice(gender_guess['girl_names'])
-    print(boys_name)
-    print(girls_name)
+    while not (
+        choose_gender == 'G' or choose_gender == 'B'
+    ):
+        choose_gender = input(
+        "Would you like to guess a boy's name (B) or girl's name (G)?"
+    )
+    return [boys_name, girls_name, choose_gender]
 
-
-choose_list(gender_guess)
+word_to_guess = choose_list(gender_guess)
+print(word_to_guess)
