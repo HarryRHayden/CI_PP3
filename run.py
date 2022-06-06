@@ -35,10 +35,13 @@ def which_word(boys_name, girls_name, choose_gender):
     """
     Determins the word to be guessed
     """
-    
+    if choose_gender == 'G':
+        chosen_word = girls_name
+    else:
+        chosen_word = boys_name
+    return chosen_word
 
 
 boys_name, girls_name, choose_gender = choose_list(gender_guess)
-print(boys_name)
-print(girls_name)
-print(choose_gender)
+word_to_guess = which_word(boys_name, girls_name, choose_gender)
+print(word_to_guess)
