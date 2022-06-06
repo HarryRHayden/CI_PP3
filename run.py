@@ -30,6 +30,9 @@ def choose_list(gender_guess):
     )
     return [boys_name, girls_name, choose_gender]
 
+
+def which_word(boys_name, girls_name, choose_gender):
+
 boys_name, girls_name, choose_gender = choose_list(gender_guess)
 print(boys_name)
 print(girls_name)
