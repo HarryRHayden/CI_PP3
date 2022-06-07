@@ -18,7 +18,7 @@ def choose_list(gender_guess):
     """
     choose_gender = input(
         "Would you like to guess a boy's name (B) or girl's name (G)?\n"
-    )
+    ).upper()
     boys_name = random.choice(gender_guess['boys_names'])
     girls_name = random.choice(gender_guess['girl_names'])
     while not (
@@ -49,7 +49,8 @@ def user_guess(word_to_guess, USER_GUESSES):
     display_under = '_' * len(word_to_guess)
     print(display_under)
     global GUESS_COUNT
-    
+    user_character = input('Enter your letter: ').upper()
+    while len(user_character) != 1 
 
 
 
