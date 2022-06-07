@@ -49,9 +49,12 @@ def user_guess(word_to_guess, USER_GUESSES):
     display_under = '_' * len(word_to_guess)
     print(display_under)
     global GUESS_COUNT
+    print(word_to_guess)
     user_character = input('Enter your letter: ').upper()
     while(not user_character.isalpha()) or len(user_character) != 1:
         user_character = input('That is not a valid input please enter a letter: ').upper()
+    if user_character in word_to_guess:
+        print(f'Congratulations!! {user_character} is in the name!')
 
 
 
