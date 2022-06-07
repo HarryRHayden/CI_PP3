@@ -45,6 +45,9 @@ def user_guess(word_to_guess, USER_GUESSES):
     """
     For user to input their character guesses. Disallowing numerical input
     """
+    print('Your word to guess is below:')
+    display_under = '_' * len(word_to_guess)
+    print(display_under)
     global GUESS_COUNT
     character_chosen = input('Choose a letter:\n').upper()
     print(character_chosen)
