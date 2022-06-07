@@ -50,7 +50,8 @@ def user_guess(word_to_guess, USER_GUESSES):
     print(display_under)
     global GUESS_COUNT
     user_character = input('Enter your letter: ').upper()
-    while len(user_character) != 1 
+    while(not user_character.isalpha()) or len(user_character) != 1:
+        user_character = input('That is not a valid input please enter a letter: ').upper()
 
 
 
