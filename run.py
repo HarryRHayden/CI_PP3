@@ -42,6 +42,8 @@ def which_word(boys_name, girls_name, choose_gender):
     return chosen_word
 
 
+def user_guess(word_to_guess, user_guesses):
+
 boys_name, girls_name, choose_gender = choose_list(gender_guess)
 word_to_guess = which_word(boys_name, girls_name, choose_gender)
 print(word_to_guess)
