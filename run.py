@@ -39,18 +39,20 @@ def which_word(boys_name, girls_name, choose_gender):
     else:
         chosen_word = boys_name
     return chosen_word
-GeneratorExit()
+
 
 def user_guess(word_to_guess, USER_GUESSES):
     """
     For user to input their character guesses. Disallowing numerical input
     """
+    user_correct = False
     print('Your word to guess is below:')
     display_under = '_' * len(word_to_guess)
     print(display_under)
     global GUESS_COUNT
     character_chosen = input('Choose a letter:\n').upper()
     print(character_chosen)
+
 
 
 boys_name, girls_name, choose_gender = choose_list(gender_guess)
