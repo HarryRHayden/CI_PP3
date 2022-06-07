@@ -27,7 +27,7 @@ def choose_list(gender_guess):
         choose_gender = input(
             "Would you like to guess a boy's name (B) or girl's name (G)?"
     )
-    return [boys_name, girls_name, choose_gender]
+    return [boys_name.upper(), girls_name.upper(), choose_gender]
 
 
 def which_word(boys_name, girls_name, choose_gender):
