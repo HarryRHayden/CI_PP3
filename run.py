@@ -45,14 +45,12 @@ def user_guess(word_to_guess, USER_GUESSES):
     """
     For user to input their character guesses. Disallowing numerical input
     """
-    user_correct = False
     print('Your word to guess is below:')
     display_under = '_' * len(word_to_guess)
     print(display_under)
     global GUESS_COUNT
-    while not user_correct and GUESS_COUNT > 0:
-        character_chosen = input('Choose a letter:\n').upper()
-        if len(character_chosen) == 1 and character_chosen.isalpha():
+    
+
 
 
 boys_name, girls_name, choose_gender = choose_list(gender_guess)
