@@ -50,8 +50,8 @@ def user_guess(word_to_guess, USER_GUESSES):
     display_under = '_' * len(word_to_guess)
     print(display_under)
     global GUESS_COUNT
-    character_chosen = input('Choose a letter:\n').upper()
-    print(character_chosen)
+    while not user_correct and GUESS_COUNT > 0:
+        character_chosen = input('Choose a letter:\n').upper()
 
 
 
