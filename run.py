@@ -19,6 +19,7 @@ def choose_list(gender_guess):
     choose_gender = input(
         "Would you like to guess a boy's name (B) or girl's name (G)?\n"
     ).upper()
+    # Give random choice for each list
     boys_name = random.choice(gender_guess['boys_names'])
     girls_name = random.choice(gender_guess['girl_names'])
     while not (
@@ -46,6 +47,7 @@ def user_guess(word_to_guess, USER_GUESSES):
     For user to input their character guesses. Disallowing numerical input
     """
     print('Your word to guess is below:')
+    # Check if the user has made a previous guess
     if len(USER_GUESSES) == 0:
         display_under = '_' * len(word_to_guess)
         print(display_under)
@@ -84,4 +86,3 @@ def win_or_lose(USER_GUESSES, user_character, word_to_guess):
 boys_name, girls_name, choose_gender = choose_list(gender_guess)
 word_to_guess = which_word(boys_name, girls_name, choose_gender)
 user_guess(word_to_guess, USER_GUESSES)
-print(word_to_guess)
