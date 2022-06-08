@@ -52,9 +52,23 @@ def user_guess(word_to_guess, USER_GUESSES):
     print(word_to_guess)
     user_character = input('Enter your letter: ').upper()
     while(not user_character.isalpha()) or len(user_character) != 1:
-        user_character = input('That is not a valid input please enter a letter: ').upper()
+        user_character = input(
+            'That is not a valid input please enter a letter: '
+            ).upper()
     if user_character in word_to_guess:
-        print(f'Congratulations!! {user_character} is in the name!')
+        print(
+            f'Congratulations!! {user_character} is in the name!'
+            )
+    elif user_character in USER_GUESSES:
+        print(
+            f'You have already tried {user_character}. Attempt another letter'
+            )
+    else:
+        GUESS_COUNT -= 1
+        print(
+            f'Unlucky! {user_character} is not in the name'
+            f'You now have {GUESS_COUNT} number of tries left'
+        )
 
 
 
