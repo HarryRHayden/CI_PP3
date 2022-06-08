@@ -46,8 +46,9 @@ def user_guess(word_to_guess, USER_GUESSES):
     For user to input their character guesses. Disallowing numerical input
     """
     print('Your word to guess is below:')
-    display_under = '_' * len(word_to_guess)
-    print(display_under)
+    if len(USER_GUESSES) == 0:
+        display_under = '_' * len(word_to_guess)
+        print(display_under)
     global GUESS_COUNT
     print(word_to_guess)
     user_character = input('Enter your letter: ').upper()
@@ -77,7 +78,7 @@ def win_or_lose(USER_GUESSES, user_character, word_to_guess):
     Function to check whether the user has won the game or needs to guess again
     """
     USER_GUESSES.append(user_character)
-    
+    return user_guess(word_to_guess, USER_GUESSES)
 
 
 boys_name, girls_name, choose_gender = choose_list(gender_guess)
