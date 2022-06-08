@@ -72,7 +72,7 @@ def user_guess(word_to_guess, USER_GUESSES):
     return win_or_lose(USER_GUESSES, user_character, word_to_guess)
 
 
-def win_or_lose()
+def win_or_lose(USER_GUESSES, user_character, word_to_guess):
 
 
 boys_name, girls_name, choose_gender = choose_list(gender_guess)
