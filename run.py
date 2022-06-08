@@ -73,6 +73,11 @@ def user_guess(word_to_guess, USER_GUESSES):
 
 
 def win_or_lose(USER_GUESSES, user_character, word_to_guess):
+    """
+    Function to check whether the user has won the game or needs to guess again
+    """
+    USER_GUESSES.append(user_character)
+    
 
 
 boys_name, girls_name, choose_gender = choose_list(gender_guess)
