@@ -46,9 +46,9 @@ def user_guess(word_to_guess, USER_GUESSES):
     """
     For user to input their character guesses. Disallowing numerical input
     """
+     # Check if the user has made a previous guess
     if len(USER_GUESSES) == 0:
         print('Good luck with your game!')
-    # Check if the user has made a previous guess
     global GUESS_COUNT
     user_character = input('Enter your letter: ').upper()
     while(not user_character.isalpha()) or len(user_character) != 1:
