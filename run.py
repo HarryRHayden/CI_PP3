@@ -77,12 +77,7 @@ def win_or_lose(USER_GUESSES, user_character, word_to_guess):
     Function to check whether the user has won the game or needs to guess again
     """
     USER_GUESSES = USER_GUESSES + user_character
-    guessed_so_far = "_" * len(word_to_guess)
-    word_in_list = list(guessed_so_far)
-    indices = [i for i, letter in enumerate(word_to_guess) if letter == user_character]
-    for index in indices:
-        word_in_list[index] = user_character
-    guessed_after = "".join(word_in_list)
+    
     return user_guess(word_to_guess, USER_GUESSES)
 
 
