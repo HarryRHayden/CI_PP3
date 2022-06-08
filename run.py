@@ -48,10 +48,12 @@ def user_guess(word_to_guess, USER_GUESSES):
     """
     print('Your word to guess is below:')
     # Check if the user has made a previous guess
-    if len(USER_GUESSES) == 0:
-        word_to_guess = '_' * len(word_to_guess)
     global GUESS_COUNT
-    print(word_to_guess)
+    if len(USER_GUESSES) == 0:
+        screen_guess = '_' * len(word_to_guess)
+        print(screen_guess)
+    else:
+        print(screen_guess)
     user_character = input('Enter your letter: ').upper()
     while(not user_character.isalpha()) or len(user_character) != 1:
         user_character = input(
@@ -71,14 +73,15 @@ def user_guess(word_to_guess, USER_GUESSES):
             f'Unlucky! {user_character} is not in the name'
             f'You now have {GUESS_COUNT} number of tries left'
         )
-    return win_or_lose(USER_GUESSES, user_character, word_to_guess)
+    return win_or_lose(USER_GUESSES, user_character, word_to_guess, screen_guess)
 
 
-def win_or_lose(USER_GUESSES, user_character, word_to_guess):
+def win_or_lose(USER_GUESSES, user_character, word_to_guess, screen_guess):
     """
     Function to check whether the user has won the game or needs to guess again
     """
     USER_GUESSES.append(user_character)
+    word_in_list = list(word_to_guess)
     return user_guess(word_to_guess, USER_GUESSES)
 
 
