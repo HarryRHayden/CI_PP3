@@ -69,7 +69,10 @@ def user_guess(word_to_guess, USER_GUESSES):
             f'Unlucky! {user_character} is not in the name'
             f'You now have {GUESS_COUNT} number of tries left'
         )
+    return win_or_lose(USER_GUESSES, user_character, word_to_guess)
 
+
+def win_or_lose()
 
 
 boys_name, girls_name, choose_gender = choose_list(gender_guess)
