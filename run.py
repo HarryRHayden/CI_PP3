@@ -7,7 +7,7 @@ gender_guess = {
 }
 
 # Empty list for users guesses
-USER_GUESSES = []
+USER_GUESSES = ""
 # How many guesses the user gets
 GUESS_COUNT = 7
 
@@ -73,9 +73,9 @@ def user_guess(word_to_guess, USER_GUESSES):
 
 
 def win_or_lose(USER_GUESSES, user_character, word_to_guess):
-
+    """
     Function to check whether the user has won the game or needs to guess again
-  
+    """
     USER_GUESSES = USER_GUESSES + user_character
     guessed_so_far = "_" * len(word_to_guess)
     word_in_list = list(guessed_so_far)
@@ -83,7 +83,6 @@ def win_or_lose(USER_GUESSES, user_character, word_to_guess):
     for index in indices:
         word_in_list[index] = user_character
     guessed_after = "".join(word_in_list)
-    print(guessed_after)
     return user_guess(word_to_guess, USER_GUESSES)
 
 
