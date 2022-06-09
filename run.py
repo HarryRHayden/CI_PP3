@@ -46,6 +46,7 @@ def user_guess(word_to_guess, USER_GUESSES):
     """
     For user to input their character guesses. Disallowing numerical input
     """
+
      # Check if the user has made a previous guess
     if len(USER_GUESSES) == 0:
         print('Good luck with your game!')
@@ -65,20 +66,17 @@ def user_guess(word_to_guess, USER_GUESSES):
             )
     else:
         GUESS_COUNT -= 1
+
         print(
             f'Unlucky! {user_character} is not in the name'
             f'You now have {GUESS_COUNT} number of tries left'
         )
-    return win_or_lose(USER_GUESSES, user_character, word_to_guess)
 
 
-def win_or_lose(USER_GUESSES, user_character, word_to_guess):
+def win_or_lose(user_wins):
     """
     Function to check whether the user has won the game or needs to guess again
     """
-    USER_GUESSES = USER_GUESSES + user_character
-    
-    return user_guess(word_to_guess, USER_GUESSES)
 
 
 boys_name, girls_name, choose_gender = choose_list(gender_guess)
