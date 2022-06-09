@@ -41,9 +41,11 @@ def user_guess(word_to_guess):
     """
     For user to input their character guesses. Disallowing numerical input
     """
+    guess_count = 6
+    user_guesses = []
     word_completion = "_" * len(word_to_guess)
      # Check if the user has made a previous guess
-    if len(USER_GUESSES) == 0:
+    if len(user_guesses) == 0:
         print('Good luck with your game!')
     global GUESS_COUNT
     print(word_completion)
@@ -56,16 +58,16 @@ def user_guess(word_to_guess):
         print(
             f'Congratulations!! {user_character} is in the name!'
             )
-    elif user_character in USER_GUESSES:
+    elif user_character in user_guesses:
         print(
             f'You have already tried {user_character}. Attempt another letter'
             )
     else:
-        GUESS_COUNT -= 1
+        guess_count -= 1
 
         print(
             f'Unlucky! {user_character} is not in the name'
-            f'You now have {GUESS_COUNT} number of tries left'
+            f'You now have {guess_count} number of tries left'
         )
 
 
