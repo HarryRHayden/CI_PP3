@@ -41,6 +41,7 @@ def user_guess(word_to_guess):
     """
     For user to input their character guesses. Disallowing numerical input
     """
+    word_completed = False
     guess_count = 6
     user_guesses = []
     word_completion = "_" * len(word_to_guess)
@@ -54,21 +55,27 @@ def user_guess(word_to_guess):
         user_character = input(
             'That is not a valid input please enter a letter: '
             ).upper()
-    if user_character in word_to_guess:
-        print(
-            f'Congratulations!! {user_character} is in the name!'
-            )
-    elif user_character in user_guesses:
-        print(
-            f'You have already tried {user_character}. Attempt another letter'
-            )
-    else:
-        guess_count -= 1
-
-        print(
-            f'Unlucky! {user_character} is not in the name'
-            f'You now have {guess_count} number of tries left'
-        )
+    while word_completed:
+        if user_character in word_to_guess:
+            print(
+                f'Congratulations!! {user_character} is in the name!'
+                )
+            user_guesses.append(user_character)
+        elif user_character in user_guesses:
+            print(
+                f'You have already tried {user_character}. Attempt another letter'
+                )
+        else:
+            if guess_count == 0:
+                user_wins = 0
+                return win_or_lose(user_wins)
+            else:
+                guess_count -= 1
+                print(
+                f'Unlucky! {user_character} is not in the name'
+                f'You now have {guess_count} number of tries left'
+                )
+                user_guesses.append(user_character)
 
 
 def win_or_lose(user_wins):
