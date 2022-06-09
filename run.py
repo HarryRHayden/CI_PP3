@@ -43,19 +43,20 @@ def user_guess(word_to_guess):
     """
     word_completed = False
     guess_count = 6
+    tries = 5
     user_guesses = []
     word_completion = "_" * len(word_to_guess)
      # Check if the user has made a previous guess
     if len(user_guesses) == 0:
         print('Good luck with your game!')
     global GUESS_COUNT
-    print(word_completion)
-    user_character = input('Enter your letter: ').upper()
-    while(not user_character.isalpha()) or len(user_character) != 1:
-        user_character = input(
-            'That is not a valid input please enter a letter: '
-            ).upper()
     while not word_completed and guess_count > 0:
+        print(word_completion)
+        user_character = input('Enter your letter: ').upper()
+        while(not user_character.isalpha()) or len(user_character) != 1:
+            user_character = input(
+                'That is not a valid input please enter a letter: '
+                ).upper()
         if user_character in word_to_guess:
             print(
                 f'Congratulations!! {user_character} is in the name!'
@@ -66,17 +67,21 @@ def user_guess(word_to_guess):
             for index in indices:
                 word_listed[index] = user_character
             word_completion = "".join(word_listed)
+            if "_" not in word_completion:
+                user_wins = 1
+                return win_or_lose(user_wins)
         elif user_character in user_guesses:
             print(
                 f'You have already tried {user_character}. Attempt another letter'
                 )
         else:
-            guess_count -= 1
             print(
                 f'Unlucky! {user_character} is not in the name'
-                f'You now have {guess_count} number of tries left'
+                f'You now have {tries} number of tries left'
                 )
             user_guesses.append(user_character)
+            guess_count -= 1
+            tries -= 1
     if guess_count == 0:
         user_wins = 0
         return win_or_lose(user_wins)
@@ -85,7 +90,7 @@ def win_or_lose(user_wins):
     """
     Function to check whether the user has won the game or needs to guess again
     """
-
+    print(user_wins)
 
 boys_name, girls_name, choose_gender = choose_list(gender_guess)
 word_to_guess = which_word(boys_name, girls_name, choose_gender)
