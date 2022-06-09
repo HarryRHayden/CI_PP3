@@ -6,11 +6,6 @@ gender_guess = {
     'girl_names': ['Georgina', 'Elizabeth', 'Lucy', 'Louise', 'Ellie']
 }
 
-# Empty list for users guesses
-USER_GUESSES = ""
-# How many guesses the user gets
-GUESS_COUNT = 7
-
 
 def choose_list(gender_guess):
     """
@@ -42,15 +37,16 @@ def which_word(boys_name, girls_name, choose_gender):
     return chosen_word
 
 
-def user_guess(word_to_guess, USER_GUESSES):
+def user_guess(word_to_guess):
     """
     For user to input their character guesses. Disallowing numerical input
     """
-
+    word_completion = "_" * len(word_to_guess)
      # Check if the user has made a previous guess
     if len(USER_GUESSES) == 0:
         print('Good luck with your game!')
     global GUESS_COUNT
+    print(word_completion)
     user_character = input('Enter your letter: ').upper()
     while(not user_character.isalpha()) or len(user_character) != 1:
         user_character = input(
@@ -81,4 +77,4 @@ def win_or_lose(user_wins):
 
 boys_name, girls_name, choose_gender = choose_list(gender_guess)
 word_to_guess = which_word(boys_name, girls_name, choose_gender)
-user_guess(word_to_guess, USER_GUESSES)
+user_guess(word_to_guess)
