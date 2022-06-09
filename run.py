@@ -61,6 +61,11 @@ def user_guess(word_to_guess):
                 f'Congratulations!! {user_character} is in the name!'
                 )
             user_guesses.append(user_character)
+            word_listed = list(word_completion)
+            indices = [i for i, letter in enumerate(word_to_guess) if letter == user_character]
+            for index in indices:
+                word_listed[index] = user_character
+            word_completion = "".join(word_listed)
         elif user_character in user_guesses:
             print(
                 f'You have already tried {user_character}. Attempt another letter'
