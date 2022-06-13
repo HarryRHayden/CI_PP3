@@ -90,7 +90,10 @@ def win_or_lose(user_wins):
     """
     Function to check whether the user has won the game or needs to guess again
     """
-    print(user_wins)
+    if user_wins == 1:
+        print('Congratulations you have guessed the word!')
+    else:
+        print('Unlucky! You did not guess the word. Better luck next time!')
 
 boys_name, girls_name, choose_gender = choose_list(gender_guess)
 word_to_guess = which_word(boys_name, girls_name, choose_gender)
