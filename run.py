@@ -57,7 +57,11 @@ def user_guess(word_to_guess):
             user_character = input(
                 'That is not a valid input please enter a letter: '
                 ).upper()
-        if user_character in word_to_guess:
+        if user_character in user_guesses:
+            print(
+                f'You have already tried {user_character}. Attempt another letter'
+                )
+        elif user_character in word_to_guess:
             print(
                 f'Congratulations!! {user_character} is in the name!'
                 )
@@ -70,10 +74,6 @@ def user_guess(word_to_guess):
             if "_" not in word_completion:
                 user_wins = 1
                 return win_or_lose(user_wins)
-        elif user_character in user_guesses:
-            print(
-                f'You have already tried {user_character}. Attempt another letter'
-                )
         else:
             print(
                 f'Unlucky! {user_character} is not in the name'
@@ -100,7 +100,7 @@ def main():
     boys_name, girls_name, choose_gender = choose_list(gender_guess)
     word_to_guess = which_word(boys_name, girls_name, choose_gender)
     user_guess(word_to_guess)
-    while input('Do you wish to play again? Y/N ').upper() == 'Y':
+    while input('Do you wish to play again? Y/N \n').upper() == 'Y':
         boys_name, girls_name, choose_gender = choose_list(gender_guess)
         word_to_guess = which_word(boys_name, girls_name, choose_gender)
         user_guess(word_to_guess)
