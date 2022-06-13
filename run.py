@@ -1,4 +1,5 @@
-import time, random
+import time
+import random
 
 # Lists for potential words to guess
 gender_guess = {
@@ -21,8 +22,7 @@ def choose_list(gender_guess):
         choose_gender == 'G' or choose_gender == 'B'
     ):
         choose_gender = input(
-            "Would you like to guess a boy's name (B) or girl's name (G)?"
-    )
+            "Would you like to guess a boy's name (B) or girl's name (G)?")
     return [boys_name.upper(), girls_name.upper(), choose_gender]
 
 
@@ -46,7 +46,7 @@ def user_guess(word_to_guess):
     tries = 5
     user_guesses = []
     word_completion = "_" * len(word_to_guess)
-     # Check if the user has made a previous guess
+    # Check if the user has made a previous guess
     if len(user_guesses) == 0:
         print('Good luck with your game!')
     global GUESS_COUNT
