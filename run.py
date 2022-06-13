@@ -74,7 +74,7 @@ def user_guess(word_to_guess):
             word_completion = "".join(word_listed)
             if "_" not in word_completion:
                 user_wins = 1
-                return win_or_lose(user_wins)
+                return win_or_lose(user_wins, word_to_guess)
         else:
             print(
                 f'Unlucky! {user_character} is not in the name. '
@@ -85,17 +85,18 @@ def user_guess(word_to_guess):
             tries -= 1
     if tries == 0:
         user_wins = 0
-        return win_or_lose(user_wins)
+        return win_or_lose(user_wins, word_to_guess)
 
 
-def win_or_lose(user_wins):
+def win_or_lose(user_wins, word_to_guess):
     """
     Function to check whether the user has won the game or needs to guess again
     """
     if user_wins == 1:
-        print('Congratulations you have guessed the word!\n')
+        print(f'Congratulations you have guessed the word! {word_to_guess}\n')
     else:
-        print('Unlucky! You did not guess the word. Better luck next time!\n')
+        print(f'Unlucky! You did not guess the word, {word_to_guess}. \
+            Better luck next time!\n')
 
 
 def main():
