@@ -141,7 +141,10 @@ The website was tested on the following browsers:
 ## Deployment
 
 The website was deployed using Heroku by following these steps:
-1. 
+1. Log into [Heroku](https://www.heroku.com/)
+2. Select Create New App
+3. Name your app and select location
+    <details><summary>Heroku Deployment</summary><img src="docs/images/app_name_region.png"></details><br>
 
 You can for fork the repository by following these steps:
 1. Go to the GitHub repository
