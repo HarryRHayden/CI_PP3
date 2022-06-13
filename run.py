@@ -95,6 +95,8 @@ def win_or_lose(user_wins):
     else:
         print('Unlucky! You did not guess the word. Better luck next time!')
 
-boys_name, girls_name, choose_gender = choose_list(gender_guess)
-word_to_guess = which_word(boys_name, girls_name, choose_gender)
-user_guess(word_to_guess)
+
+def main():
+    boys_name, girls_name, choose_gender = choose_list(gender_guess)
+    word_to_guess = which_word(boys_name, girls_name, choose_gender)
+    user_guess(word_to_guess)
