@@ -162,7 +162,7 @@ The live link can be found here -
 
 ### Content 
 
-- 
+- The responsive design cover was made using [Am I Responsive?](https://ui.dev/amiresponsive)
 
 ### Media
 
