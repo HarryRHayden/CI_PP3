@@ -4,7 +4,7 @@
 
 ![Webpage responsive]()
 
-[Live Webpage](https://harryrhayden.github.io/CI_PP2/)
+[Live Webpage]()
 
 1. [Project Goals](#project-goals)
     1. [User Goals](#user-goals)
