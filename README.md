@@ -2,7 +2,7 @@
 
 
 
-![Webpage responsive]()
+![Webpage responsive](docs/images/responsive_design.png)
 
 [Live Webpage]()
 
