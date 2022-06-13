@@ -76,7 +76,7 @@ def user_guess(word_to_guess):
                 return win_or_lose(user_wins)
         else:
             print(
-                f'Unlucky! {user_character} is not in the name'
+                f'Unlucky! {user_character} is not in the name. '
                 f'You now have {tries} tries left'
                 )
             user_guesses.append(user_character)
