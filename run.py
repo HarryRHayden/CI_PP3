@@ -100,3 +100,4 @@ def main():
     boys_name, girls_name, choose_gender = choose_list(gender_guess)
     word_to_guess = which_word(boys_name, girls_name, choose_gender)
     user_guess(word_to_guess)
+    while input('Do you wish to play again? Y/N ').upper() == 'Y':
