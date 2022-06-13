@@ -59,7 +59,7 @@ def user_guess(word_to_guess):
                 ).upper()
         if user_character in user_guesses:
             print(
-                f'You have already tried {user_character}. Attempt another letter'
+                f'You have already tried {user_character}. Attempt another'
                 )
         elif user_character in word_to_guess:
             print(
@@ -67,7 +67,8 @@ def user_guess(word_to_guess):
                 )
             user_guesses.append(user_character)
             word_listed = list(word_completion)
-            indices = [i for i, letter in enumerate(word_to_guess) if letter == user_character]
+            indices = [i for i, letter in enumerate(word_to_guess)
+                       if letter == user_character]
             for index in indices:
                 word_listed[index] = user_character
             word_completion = "".join(word_listed)
