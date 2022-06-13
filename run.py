@@ -52,7 +52,7 @@ def user_guess(word_to_guess):
     global GUESS_COUNT
     while not word_completed and guess_count > 0:
         print(word_completion)
-        user_character = input('Enter your letter: ').upper()
+        user_character = input('Enter your letter: \n').upper()
         while(not user_character.isalpha()) or len(user_character) != 1:
             user_character = input(
                 'That is not a valid input please enter a letter: '
@@ -82,7 +82,7 @@ def user_guess(word_to_guess):
             user_guesses.append(user_character)
             guess_count -= 1
             tries -= 1
-    if guess_count == 0:
+    if tries == 0:
         user_wins = 0
         return win_or_lose(user_wins)
 
@@ -91,9 +91,9 @@ def win_or_lose(user_wins):
     Function to check whether the user has won the game or needs to guess again
     """
     if user_wins == 1:
-        print('Congratulations you have guessed the word!')
+        print('Congratulations you have guessed the word!\n')
     else:
-        print('Unlucky! You did not guess the word. Better luck next time!')
+        print('Unlucky! You did not guess the word. Better luck next time!\n')
 
 
 def main():
@@ -101,3 +101,10 @@ def main():
     word_to_guess = which_word(boys_name, girls_name, choose_gender)
     user_guess(word_to_guess)
     while input('Do you wish to play again? Y/N ').upper() == 'Y':
+        boys_name, girls_name, choose_gender = choose_list(gender_guess)
+        word_to_guess = which_word(boys_name, girls_name, choose_gender)
+        user_guess(word_to_guess)
+
+
+if __name__ == '__main__':
+    main()
