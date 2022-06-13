@@ -87,6 +87,7 @@ def user_guess(word_to_guess):
         user_wins = 0
         return win_or_lose(user_wins)
 
+
 def win_or_lose(user_wins):
     """
     Function to check whether the user has won the game or needs to guess again
