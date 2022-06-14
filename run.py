@@ -94,7 +94,7 @@ def win_or_lose(user_wins, word_to_guess):
     """
     if user_wins == 1:
         print(f'Congratulations you have guessed the word! {word_to_guess}\n')
-    else:
+    elif user_wins == 0:
         print(f'Unlucky! You did not guess the word, {word_to_guess}. \
             Better luck next time!\n')
 
