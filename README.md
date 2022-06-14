@@ -11,43 +11,41 @@ Hangman is a letter based guessing game where the player has a limited number of
     2. [Site Owner Goals](#site-owner-goals)
 2. [User Experience](#user-experience)
     1. [Target Audience](#target-audience)
-    2. [User Requirements and Expectations](#user-requirements-and-expectations)
-    3. [User Stories](#user-stories)
-3. [Style Choices](#style-choices)
-    1. [Design](#design)
-    2. [Colour](#colour-scheme)
-    4. [Structure](#structure)
-    5. [Initial Framework](#initial-framework)
+    2. [User Stories](#user-stories)
+3. [Structure](#structure)
+    1. [Initial Framework](#initial-framework)
 4. [Technologies Used](#technologies-used)
     1. [Languages](#languages)
     2. [Frameworks & Tools](#frameworks-and-tools)
 5. [Features](#features)
 6. [Testing](#testing)
-    1. [Manual Testing](#manual-testing)
-    5. [Device testing](#perform-test-on-devices)
-    6. [Browser compatibility](#browser-compatability)
-    7. [Testing user and owner goals](#testing-user-and-owner-goals)
+    1. [Device testing](#perform-test-on-devices)
+    2. [Browser compatibility](#browser-compatability)
+    3. [Testing user and owner goals](#testing-user-and-owner-goals)
 7. [Validation](#validator-testing)
-    1. [HTML](#html)
-    2. [CSS](#css)
-    3. [Lighthouse](#lighthouse-score)
-    4. [Accessibility](#accessibility)
-    5. [JavaScript](#javascript)
+    1. [Python](#python)
 8. [Bugs Fixed](#bugs-fixed)
 9. [Deployment](#deployment)
 10. [Credits](#credits)
     1. [Content](#content)
-    2. [Media](#media)
 
 ## Project Goals
 
 ### User Goals
 
-1. 
+1. Able to play a game of hangman
+2. Clearly know how many guesses remain
+3. Clearly shown if win the game
+4. Clearly shown if lose the game
+5. Fun easy experience of playing
 
 ### Site Owner Goals
 
-
+1. Give the user variation of the word to guess (Boys names v Girls names)
+2. Provide the user a limited number of attempts at guessing letters with an update to the number of remaining attempts
+3. Provide positive feedback for a correct guess
+4. Provide feedback for an incorrect guess
+5. Account for user input being in lower or uppercase
 
 ## User Experience
 
@@ -57,10 +55,6 @@ Hangman is a letter based guessing game where the player has a limited number of
 - People with spare time and access to a computer
 - People who enjoy logical quizzes
 - People who enjoy guessing games
-
-### User Requirements and Expectations
-
-- 
 
 ### User Stories
 
