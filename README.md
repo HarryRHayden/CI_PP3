@@ -123,8 +123,10 @@ The website was tested on the following browsers:
 
 ## Validator Testing 
 
-### HTML
+### Python
 
+Code validation completed by [PEP8](http://pep8online.com/) and returned no errors
+    <details><summary>Python</summary><img src="docs/images/pep8_checker.png"></details><br>
 
 ## Bugs Fixed
 
