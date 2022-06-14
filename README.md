@@ -171,14 +171,10 @@ You can clone the repository by following these steps:
 6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
 7. Press the Enter key to create your local clone.
 
-The live link can be found here - 
+The live link can be found here - https://ci-pp3.herokuapp.com/
 
 ## Credits 
 
 ### Content 
 
 - The responsive design cover was made using [Am I Responsive?](https://ui.dev/amiresponsive)
-
-### Media
-
-- 
