@@ -83,9 +83,10 @@ def user_guess(word_to_guess):
             user_guesses.append(user_character)
             guess_count -= 1
             tries -= 1
-    if tries == 0:
-        user_wins = 0
-        return win_or_lose(user_wins, word_to_guess)
+            if tries == 0:
+                user_wins = 0
+                return win_or_lose(user_wins, word_to_guess)
+    
 
 
 def win_or_lose(user_wins, word_to_guess):
