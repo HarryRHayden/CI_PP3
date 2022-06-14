@@ -1,6 +1,6 @@
 # Hangman
 
-
+Hangman is a letter based guessing game where the player has a limited number of tries to guess a word by choosing a single letter at a time. If the player guesses a correct letter then they continue being allowed to guess further letters. If they guess an incorrect letter their number of attempts is decreased. The object of the game is to guess all the letters contained in a word to spell the entire name without losing all of your lives.
 
 ![Webpage responsive](docs/images/responsive_design.png)
 
