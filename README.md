@@ -101,19 +101,14 @@ Before starting the website I used a framework design tool called [Balsamic](htt
 
 ### Features Left to Implement
 
-- Login to save wins/losses
+- Add a username 
 
 ## Testing 
 
 ### Perform test on devices
 The website was tested on the following devices:
 - MacBook Pro
-- MacBook 
-- iPhone 11
-- iPhone 12 Mini
-- iPad
-
-In addition, the website was tested using Google Chrome Developer Tools Device Toggling option for all available device options.
+- MacBook
 
 ### Browser compatability
 The website was tested on the following browsers:
