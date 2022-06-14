@@ -132,6 +132,12 @@ Before starting the website I used a framework design tool called [Balsamic](htt
 
   ![Good luck](docs/images/correct_guess.png)
 
+- __Incorrect guess__
+
+  - The user is displayed a message to advise they have been unsuccessful at guessing a letter
+
+  ![Good luck](docs/images/incorrect_guess.png)
+
 ### Features Left to Implement
 
 - Add a username 
