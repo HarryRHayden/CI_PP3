@@ -85,6 +85,7 @@ Before starting the website I used a framework design tool called [Balsamic](htt
 - Gitpod
 - Paint<span>.</span>NET
 - Balsamiq
+- Heroku
 
 ## Features
 ### Existing Features
@@ -148,6 +149,7 @@ The website was deployed using Heroku by following these steps:
 2. Select Create New App
 3. Name your app and select location
     <details><summary>Heroku Deployment</summary><img src="docs/images/app_name_region.png"></details><br>
+
 
 You can for fork the repository by following these steps:
 1. Go to the GitHub repository
