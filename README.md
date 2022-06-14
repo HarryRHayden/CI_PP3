@@ -128,7 +128,8 @@ The website was tested on the following browsers:
 
 ## Bugs Fixed
 
-
+- Lowercase letter issue
+    * When inputting the initial decision for choosing a boy or girl name the if statement was not catching the decision. Utilised the .upper() function in Python to ensure the decision was a capital regardless of user decision
 
 ## Testing User and Owner Goals
 
