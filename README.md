@@ -90,14 +90,35 @@ Before starting the website I used a framework design tool called [Balsamic](htt
 ## Features
 ### Existing Features
 
-- __Header__
+- __Choice of boys name or girls name__
 
-  - 
+  - The user can decide which gender of name they wish to guess
 
+  ![Enter choice](docs/images/choice_enter.png)
 
-  ![]()
+- __Good luck message__
 
+  - The user is displayed a good luck message
 
+  ![Good luck](docs/images/good_luck.png)
+
+- __Word shown as underscores__
+
+  - The user is displayed a the word with the letters replaced by '_' to show the length of the word
+
+  ![Good luck](docs/images/good_luck.png)
+
+- __Enter a letter area__
+
+  - The user is displayed an 'enter a letter' phrase and an area to enter said letter
+
+  ![Good luck](docs/images/good_luck.png)
+
+- __Invalid entry__
+
+  - The user is displayed a message to advise of an invalid entry when a letter is not the input
+
+  ![Good luck](docs/images/invalid_entry.png)
 
 ### Features Left to Implement
 
