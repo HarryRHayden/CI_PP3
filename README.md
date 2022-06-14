@@ -138,6 +138,12 @@ Before starting the website I used a framework design tool called [Balsamic](htt
 
   ![Good luck](docs/images/incorrect_guess.png)
 
+- __Tries counter__
+
+  - The user has a limited number of guesses which is displayed when an incorrect letter is guessed
+
+  ![Good luck](docs/images/number_of_tries.png)
+
 ### Features Left to Implement
 
 - Add a username 
