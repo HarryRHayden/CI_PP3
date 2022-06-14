@@ -134,6 +134,18 @@ Before starting the website I used a flowchart design tool called [Lucid Charts]
 
   ![Good luck](docs/images/number_of_tries.png)
 
+- __No more tries__
+
+  - The user has a limited number of guesses which ends the game when this number runs out
+
+  ![Good luck](docs/images/no_more_tries.png)
+
+- __Correct word__
+
+  - The user is shown a congratulatory message and the word when they guess all the letters
+
+  ![Good luck](docs/images/correct_word.png)
+
 ### Features Left to Implement
 
 - Add a username 
