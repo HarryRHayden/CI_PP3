@@ -19,9 +19,9 @@ Hangman is a letter based guessing game where the player has a limited number of
     2. [Frameworks & Tools](#frameworks-and-tools)
 5. [Features](#features)
 6. [Testing](#testing)
-    1. [Device testing](#perform-test-on-devices)
-    2. [Browser compatibility](#browser-compatability)
-    3. [Testing user and owner goals](#testing-user-and-owner-goals)
+    1. [Manual Testing](#manual-testing)
+    2. [Device testing](#perform-test-on-devices)
+    3. [Browser compatibility](#browser-compatability)
 7. [Validation](#validator-testing)
     1. [Python](#python)
 8. [Bugs Fixed](#bugs-fixed)
@@ -55,10 +55,6 @@ Hangman is a letter based guessing game where the player has a limited number of
 - People with spare time and access to a computer
 - People who enjoy logical quizzes
 - People who enjoy guessing games
-
-### User Stories
-
-- 
 
 ### Structure
 
@@ -144,6 +140,17 @@ Before starting the website I used a flowchart design tool called [Lucid Charts]
 
 ## Testing 
 
+### Manual Testing
+- Tested choice of list works - Choosing Boy list or Girl list
+- Tested inputting a number would throw an error and inform the user input was invalid
+- Tested inputting a valid guess
+- Tested for inputting a correct guess and showing the correct message on screen
+- Tested for inputting an incorrect guess and showing the correct message on the screen
+- Tested for running out of attempts at guesses and being shown the correct message on screen
+- Tested for completing the word and being shown the correct message on screen
+- Tested for wanting to play again
+- Tested for not wanting to play again
+
 ### Perform test on devices
 The website was tested on the following devices:
 - MacBook Pro
@@ -168,17 +175,6 @@ Code validation completed by [PEP8](http://pep8online.com/) and returned no erro
     * When inputting the initial decision for choosing a boy or girl name the if statement was not catching the decision. Utilised the .upper() function in Python to ensure the decision was a capital regardless of user decision
 - If statement order of running
     * When checking for if a user had already attempted a guess at that letter the if statement was incorrectly sequenced so the program congratulated the user. By switching the order of checking the if statement catches a previously guessed letter
-
-## Testing User and Owner Goals
-
-1. Ability to play a fun game
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| The game itself | Ability to play Rock, Paper, Scissors | Randomised game of Rock, Paper, Scissors against the computer | A playable game |
-
-  <details><summary>User Goal 1</summary><img src="docs/images/webpage.png"></details><br>
-
 
 
 ## Deployment
