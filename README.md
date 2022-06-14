@@ -149,7 +149,8 @@ The website was deployed using Heroku by following these steps:
 2. Select Create New App
 3. Name your app and select location
     <details><summary>Heroku Deployment</summary><img src="docs/images/app_name_region.png"></details><br>
-
+4. Enter the settings tab. Add the required buildpacks
+    <details><summary>Heroku Deployment Buildpacks</summary><img src="docs/images/buildpacks_heroku.png"></details><br>
 
 You can for fork the repository by following these steps:
 1. Go to the GitHub repository
