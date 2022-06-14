@@ -101,6 +101,9 @@ def win_or_lose(user_wins, word_to_guess):
 
 
 def main():
+    """
+    Main function to run all other functions
+    """
     boys_name, girls_name, choose_gender = choose_list(gender_guess)
     word_to_guess = which_word(boys_name, girls_name, choose_gender)
     user_guess(word_to_guess)
