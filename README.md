@@ -53,7 +53,10 @@ Hangman is a letter based guessing game where the player has a limited number of
 
 ### Target Audience
 
-- 
+- People wanting to play an online game
+- People with spare time and access to a computer
+- People who enjoy logical quizzes
+- People who enjoy guessing games
 
 ### User Requirements and Expectations
 
