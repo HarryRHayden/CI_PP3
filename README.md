@@ -151,6 +151,12 @@ The website was deployed using Heroku by following these steps:
     <details><summary>Heroku Deployment</summary><img src="docs/images/app_name_region.png"></details><br>
 4. Enter the settings tab. Add the required buildpacks
     <details><summary>Heroku Deployment Buildpacks</summary><img src="docs/images/buildpacks_heroku.png"></details><br>
+5. From the settings tab add the required Config Vars
+    <details><summary>Heroku Deployment Config Vars</summary><img src="docs/images/config_vars_heroku.png"></details><br>
+6. Select the Deploy tab. Connect to your required GitHub repository
+    <details><summary>Heroku Deployment GitHub</summary><img src="docs/images/connected_heroku.png"></details><br>
+7. From the Deploy tab scroll to the bottom and select 'Deploy'
+    <details><summary>Heroku Deployment</summary><img src="docs/images/deploy_heroku.png"></details><br>
 
 You can for fork the repository by following these steps:
 1. Go to the GitHub repository
