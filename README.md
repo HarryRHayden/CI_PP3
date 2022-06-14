@@ -130,6 +130,8 @@ The website was tested on the following browsers:
 
 - Lowercase letter issue
     * When inputting the initial decision for choosing a boy or girl name the if statement was not catching the decision. Utilised the .upper() function in Python to ensure the decision was a capital regardless of user decision
+- If statement order of running
+    * When checking for if a user had already attempted a guess at that letter the if statement was incorrectly sequenced so the program congratulated the user. By switching the order of checking the if statement catches a previously guessed letter
 
 ## Testing User and Owner Goals
 
