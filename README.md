@@ -70,9 +70,9 @@ Hangman is a letter based guessing game where the player has a limited number of
 
 ### Initial Framework
 
-Before starting the website I used a framework design tool called [Balsamic](https://balsamiq.com/) to mockup an initial design idea.
+Before starting the website I used a flowchart design tool called [Lucid Charts](https://www.lucidchart.com/pages/?gclid=CjwKCAjw46CVBhB1EiwAgy6M4skl7mbVGiSXGMSUR3JqHjJwMkf6B20PcSZEtb7117jRiZALYDWdKBoCk-wQAvD_BwE&km_CPC_AdGroupID=55688909257&km_CPC_AdPosition=&km_CPC_CampaignId=1490375427&km_CPC_Country=1006800&km_CPC_Creative=354596043016&km_CPC_Device=c&km_CPC_ExtensionID=&km_CPC_Keyword=lucid%20chart&km_CPC_MatchType=e&km_CPC_Network=g&km_CPC_TargetID=kwd-55720648523&km_CPC_placement=&km_CPC_target=&utm_campaign=_chart_en_tier1_mixed_search_brand_exact_&utm_medium=cpc&utm_source=google) to mockup a flow of information.
 
-<details><summary></summary><img src=""></details>
+<details><summary>Lucid Chart</summary><img src="docs/images/flow_diagram.png"></details>
 
 ## Technologies Used
 
@@ -84,7 +84,7 @@ Before starting the website I used a framework design tool called [Balsamic](htt
 - GitHub
 - Gitpod
 - Paint<span>.</span>NET
-- Balsamiq
+- Lucid Chart
 - Heroku
 
 ## Features
@@ -128,7 +128,7 @@ Before starting the website I used a framework design tool called [Balsamic](htt
 
 - __Correct guess__
 
-  - The user is displayed a message to advise they have correctly guessed a letter
+  - The user is displayed a message to advise they have correctly guessed a letter. With the underscore transforming into the guessed letter where applicable
 
   ![Good luck](docs/images/correct_guess.png)
 
@@ -223,3 +223,4 @@ The live link can be found here - https://ci-pp3.herokuapp.com/
 ### Content 
 
 - The responsive design cover was made using [Am I Responsive?](https://ui.dev/amiresponsive)
+- The flow diagram was made using [Lucid Charts](https://www.lucidchart.com/pages/?gclid=CjwKCAjw46CVBhB1EiwAgy6M4skl7mbVGiSXGMSUR3JqHjJwMkf6B20PcSZEtb7117jRiZALYDWdKBoCk-wQAvD_BwE&km_CPC_AdGroupID=55688909257&km_CPC_AdPosition=&km_CPC_CampaignId=1490375427&km_CPC_Country=1006800&km_CPC_Creative=354596043016&km_CPC_Device=c&km_CPC_ExtensionID=&km_CPC_Keyword=lucid%20chart&km_CPC_MatchType=e&km_CPC_Network=g&km_CPC_TargetID=kwd-55720648523&km_CPC_placement=&km_CPC_target=&utm_campaign=_chart_en_tier1_mixed_search_brand_exact_&utm_medium=cpc&utm_source=google)
