@@ -146,6 +146,12 @@ Before starting the website I used a flowchart design tool called [Lucid Charts]
 
   ![Good luck](docs/images/correct_word.png)
 
+- __Play again__
+
+  - The user has the option to play again when the game has been completed
+
+  ![Good luck](docs/images/play_again.png)
+
 ### Features Left to Implement
 
 - Add a username 
